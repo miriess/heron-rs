@@ -12,7 +12,7 @@ struct Args {
     /// Starting point of calculation
     #[arg(short, long, default_value_t = 10.0)]
     start: f64,
-    /// Starting point of calculation
+    /// Maximum iterations to be carried out - to prevent deadlock
     #[arg(short, long, default_value_t = 256)]
     max_iterations: i32,
 }
