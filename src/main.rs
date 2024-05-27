@@ -26,7 +26,7 @@ fn main() {
 
     while (x1 * x1 - args.sq).abs() > args.eps && n < args.max_iterations {
         println!(
-            "    n={iteration:0>10} :: current_guess={guess} >> {guess_squared} :: error={error}",
+            "    n={iteration: >5} :: current_guess={guess} >> {guess_squared} :: error={error}",
             iteration = n,
             guess = x1,
             guess_squared = x1 * x1,
@@ -39,5 +39,5 @@ fn main() {
 
     println!("\n\nResult: {}", x1);
     println!("Error: {}", (x1 * x1 - args.sq).abs());
-    println!("Result squared: {}", x1*x1);
+    println!("Result squared: {}", x1 * x1);
 }
